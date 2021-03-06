@@ -157,7 +157,7 @@ img {
 
 /* media queries  */
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .wrapper-img {
     width: 90%;
   }
