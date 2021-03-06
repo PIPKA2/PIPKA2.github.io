@@ -173,6 +173,9 @@ img {
   .img-nav {
     display: none;
   }
+  .menu{
+    display:none;
+  }
 }
 .menu-link a{
 	text-decoration: none;
