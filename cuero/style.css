@@ -132,6 +132,7 @@ img {
 }
 .showreel a{
 	text-decoration: none;	
+	color: #8d785b;
 }
 
 @media (max-width: 900px) {
