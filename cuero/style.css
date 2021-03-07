@@ -120,7 +120,7 @@ img {
 	margin-left: 60px;
 }
 
-.showreel {
+.showreel a{
 	position: absolute;
 	left: 0;
 	bottom: 0;
