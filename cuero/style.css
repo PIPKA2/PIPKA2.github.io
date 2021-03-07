@@ -120,7 +120,7 @@ img {
 	margin-left: 60px;
 }
 
-.showreel a{
+.showreel {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -129,6 +129,9 @@ img {
 	text-transform: uppercase;
 	color: #8d785b;
 	text-decoration: underline;
+}
+.showreel a{
+	text-decoration: underline;	
 }
 
 @media (max-width: 900px) {
