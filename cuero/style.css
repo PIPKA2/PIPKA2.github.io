@@ -131,7 +131,7 @@ img {
 	text-decoration: underline;
 }
 .showreel a{
-	text-decoration: underline;	
+	text-decoration: none;	
 }
 
 @media (max-width: 900px) {
