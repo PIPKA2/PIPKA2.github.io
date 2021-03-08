@@ -142,4 +142,10 @@ img {
 	.blocks{
 		font-size: 90px
 	}
+	.circle-shape-2{
+		dislpay:none;
+	}
+	.circle-shape-3{
+		display:none;
+	}
 }
