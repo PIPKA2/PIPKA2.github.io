@@ -13,7 +13,7 @@ TweenMax.to(".block-1", 2, {
 			});
 
 			TweenMax.to(".block-3", 2, {
-				x: "180",
+				x: "200",
 				y: "-240",
 				scale: "1.6",
 				ease: Expo.easeInOut,
