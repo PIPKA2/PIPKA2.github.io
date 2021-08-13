@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f7f3f0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    z-index: 200;
+}
+
+.load-text{
+    display: flex;
+    font-family: 'Miracle';
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 50px;
+    height: 50px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.load-text{
+    top: 45%;
+}
+
+.animation-loader--text--1{
+    position: absolute;
+    z-index: 200;
+}
+
+.animation-loader--text--2{
+    position: absolute;
+    z-index: 200;
+}
+
+@media screen and (max-width: 768px){
+    .load-text{
+        font-size: 20px;
+        height: 20px;
+    }
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        height: 60px;
+    }
+}
+
+.logo{
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: 'Miracle';
+    text-transform: uppercase;
+    letter-spacing: 1.5;
+    color: rgb(32, 32, 32);
+}
+
+@media screen and (max-width: 768px) {
+    .logo{
+        margin-left: 20px;
+        font-size: 25px;
+    }
+}
+
+.nav-btn,
+.nav-btn__svg{
+    width: 56px;
+    height: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .nav-btn__svg{
+        width: 35px;
+    }
+}
+
+.nav-btn {
+    display: block;
+    margin: -3px 0 0;
+}
+
+.nav-btn__svg{
+    position: fixed;
+    right: 60px;
+}
+
+@media screen and (max-width: 768px){
+    .nav-btn__svg{
+        position: fixed;
+        right: 20px;
+    }
+}
+
+.menu-container{
+    position: fixed !important;
+    width: 50%;
+    height: 100vh;
+    right: -50%;
+    z-index: 2;
+    background: rgb(32, 32, 32);
+}
+
+@media screen and (max-width: 768px) {
+    .menu-container{
+        width: 88%;
+        right: -100%;
+    }
+}
+
+.menu-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Miracle';
+}
+
+.menu--footer{
+    position: absolute;
+    display: flex;
+    bottom: 5%;
+    font-family: 'Miracle';
+    color: white;
+}
+
+.menu--footer p{
+    margin-left: 55px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px){
+    .menu--footer p{
+        margin-left: 15px;
+        font-size: 9px;
+    } 
+}
+
+.menu-links a {
+    font-size: 90px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .menu-links a{
+        font-size: 30px;
+    } 
+}
+
+.menu--overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*.open-menu .menu--overlay{
+    visibility: visible;
+    opacity: 1;
+}*/
+
+.p--link--menu--1{
+    position: fixed;
+    left: 30%;
+    top: 13%;
+    font-size: 17px;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .p--link--menu--1{
+        left: 25%;
+        top: 10%;
+    }
+}
+
+.p--link--menu--2{
+    position: fixed;
+    left: 10%;
+    top: 38%;
+    font-size: 17px;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .p--link--menu--2{
+        left: 5%;
+        top: 35%;
+    }
+}
+
+.p--link--menu--3{
+    position: fixed;
+    left: 30%;
+    top: 63%;
+    font-size: 17px;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .p--link--menu--3{
+        left: 25%;
+        top: 60%;
+    }
+}
+
+.p--link--menu--4{
+    position: fixed;
+    left: 10%;
+    top: 88%;
+    font-size: 17px;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .p--link--menu--4{
+        left: 5%;
+        top: 85%;
+    }
+}
+
+.link-menu-link-1{
+    position: relative;
+    left: 22%;
+    margin: 12px;
+}
+
+.link-menu-link-2{
+    margin: 12px;
+}
+
+.link-menu-link-3{
+    position: relative;
+    left: 22%;
+    margin: 12px;
+}
+
+.link-menu-link-4{
+    margin: 12px;
+}
+
+.main--section{
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.reel{
+    margin-bottom: 100px;
+    display: flex;
+    width: auto;
+    height: 300px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-text{
+    font-size: 55px;
+    font-family: 'Nanum Myeongjo', serif;
+    text-align: center;
+    z-index: -1;
+}
