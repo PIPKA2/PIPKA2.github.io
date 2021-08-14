@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
-
 const timeline = gsap.timeline({delay: 0.5});
+
 
 timeline.from('.animation-loader--text--1', 1.5, {
     y:"-100%",
@@ -28,11 +28,20 @@ timeline.to(".loader",{
     zIndex: -1,
     duration: .1
 });
-timeline.from("logo", {
-    duration: 2,
+timeline.from(".logo", {
+    duration: 0.5,
     opacity: 0,
-    y: -100,
-    ease: 'power4',
+    y: -40,
+    ease: 'power4.easeOut',
 }, "-=.2");
+timeline.from('.nav-btn__svg rect',{
+    scale: 0,
+    transformOrigin: "center right",
+    duration: 0.6,
+    ease: "power4",
+    stagger: 0.1
+}, '-=.2');
+
+
 
 
